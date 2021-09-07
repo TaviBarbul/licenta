@@ -1,0 +1,191 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CustomRunTests" verbose="1" configfailurepolicy="continue">
+
+   <test name="Tests V1 - Chrome 1400">
+   <parameter name="url" value="http://demo.applitools.com/gridHackathonV1.html" />
+   <parameter name="width" value="1400" />
+     <parameter name="height" value="1200" />
+   <parameter name="browser" value="chrome" />
+   <classes>
+     <class name="tests.ElementsTest"></class>
+     <class name="tests.ProductDetailsTest"></class>
+     <class name="tests.ShoppingExperienceTest"></class>
+   </classes>
+ </test>
+    <test name="Tests Rest API ">
+        <classes>
+            <class name="tests.apiTests.CreateAResourceTest"></class>
+        </classes>
+    </test>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <test name="Tests V1 - Traditional chrome 768">
+     <parameter name="url" value="http://demo.applitools.com/gridHackathonV1.html" />
+     <parameter name="width" value="768" />
+     <parameter name="height" value="700" />
+     <parameter name="browser" value="chrome" />
+     <classes>
+       <class name="tests.ElementsTest"></class>
+       <class name="tests.ProductDetailsTest"></class>
+       <class name="tests.ShoppingExperienceTest"></class>
+     </classes>
+   </test>
+
+<!--   <test name="Tests V1 - Traditional chrome 500">-->
+<!--     <parameter name="url" value="http://demo.applitools.com/gridHackathonV1.html" />-->
+<!--     <parameter name="width" value="500" />-->
+<!--     <parameter name="height" value="700" />-->
+<!--     <parameter name="browser" value="chrome" />-->
+<!--     <classes>-->
+<!--       <class name="tests.ElementsTraditionalTest"></class>-->
+<!--       <class name="tests.ProductDetailsTest"></class>-->
+<!--       <class name="tests.ShoppingExperienceTest"></class>-->
+<!--     </classes>-->
+<!--   </test>-->
+<!--   <test name="Tests V1 - Traditional firefox 1200">-->
+<!--     <parameter name="url" value="http://demo.applitools.com/gridHackathonV1.html" />-->
+<!--     <parameter name="width" value="1200" />-->
+<!--     <parameter name="height" value="700" />-->
+<!--     <parameter name="browser" value="firefox" />-->
+<!--     <classes>-->
+<!--       <class name="tests.ElementsTraditionalTest"></class>-->
+<!--       <class name="tests.ProductDetailsTest"></class>-->
+<!--       <class name="tests.ShoppingExperienceTest"></class>-->
+<!--     </classes>-->
+<!--   </test>-->
+<!--   <test name="Tests V1 - Traditional firefox 768">-->
+<!--     <parameter name="url" value="http://demo.applitools.com/gridHackathonV1.html" />-->
+<!--     <parameter name="width" value="768" />-->
+<!--     <parameter name="height" value="700" />-->
+<!--     <parameter name="browser" value="firefox" />-->
+<!--     <classes>-->
+<!--       <class name="tests.ElementsTraditionalTest"></class>-->
+<!--       <class name="tests.ProductDetailsTest"></class>-->
+<!--       <class name="tests.ShoppingExperienceTest"></class>-->
+<!--     </classes>-->
+<!--   </test>-->
+<!--   <test name="Tests V1 - Traditional edge 1200">-->
+<!--     <parameter name="url" value="http://demo.applitools.com/gridHackathonV1.html" />-->
+<!--     <parameter name="width" value="1200" />-->
+<!--     <parameter name="height" value="700" />-->
+<!--     <parameter name="browser" value="edge" />-->
+<!--     <classes>-->
+<!--       <class name="tests.ElementsTraditionalTest"></class>-->
+<!--       <class name="tests.ProductDetailsTest"></class>-->
+<!--       <class name="tests.ShoppingExperienceTest"></class>-->
+<!--     </classes>-->
+<!--   </test>-->
+<!--   <test name="Tests V1 - Traditional edge 768">-->
+<!--     <parameter name="url" value="http://demo.applitools.com/gridHackathonV1.html" />-->
+<!--     <parameter name="width" value="768" />-->
+<!--     <parameter name="height" value="700" />-->
+<!--     <parameter name="browser" value="edge" />-->
+<!--     <classes>-->
+<!--       <class name="tests.ElementsTraditionalTest"></class>-->
+<!--       <class name="tests.ProductDetailsTest"></class>-->
+<!--       <class name="tests.ShoppingExperienceTest"></class>-->
+<!--     </classes>-->
+<!--   </test>-->
+   <!--  V2-->
+<!--  <test name="Tests V2 - Chrome 1400">-->
+<!--    <parameter name="url" value="http://demo.applitools.com/gridHackathonV2.html" />-->
+<!--    <parameter name="width" value="1400" />-->
+<!--    <parameter name="height" value="1200" />-->
+<!--    <parameter name="browser" value="chrome" />-->
+<!--    <classes>-->
+<!--      <class name="tests.ElementsTest"></class>-->
+<!--      <class name="tests.ProductDetailsTest"></class>-->
+<!--      <class name="tests.ShoppingExperienceTest"></class>-->
+<!--    </classes>-->
+<!--  </test>-->
+<!--  <test name="Tests V2 - Traditional chrome 768">-->
+<!--    <parameter name="url" value="http://demo.applitools.com/gridHackathonV2.html" />-->
+<!--    <parameter name="width" value="768" />-->
+<!--    <parameter name="height" value="700" />-->
+<!--    <parameter name="browser" value="chrome" />-->
+<!--    <classes>-->
+<!--      <class name="tests.ElementsTraditionalTest"></class>-->
+<!--      <class name="tests.ProductDetailsTest"></class>-->
+<!--      <class name="tests.ShoppingExperienceTest"></class>-->
+<!--    </classes>-->
+<!--  </test>-->
+
+<!--  <test name="Tests V2 - Traditional chrome 500">-->
+<!--    <parameter name="url" value="http://demo.applitools.com/gridHackathonV2.html" />-->
+<!--    <parameter name="width" value="500" />-->
+<!--    <parameter name="height" value="700" />-->
+<!--    <parameter name="browser" value="chrome" />-->
+<!--    <classes>-->
+<!--      <class name="tests.ElementsTraditionalTest"></class>-->
+<!--      <class name="tests.ProductDetailsTest"></class>-->
+<!--      <class name="tests.ShoppingExperienceTest"></class>-->
+<!--    </classes>-->
+<!--  </test>-->
+<!--  <test name="Tests V2 - Traditional firefox 1200">-->
+<!--    <parameter name="url" value="http://demo.applitools.com/gridHackathonV2.html" />-->
+<!--    <parameter name="width" value="1200" />-->
+<!--    <parameter name="height" value="700" />-->
+<!--    <parameter name="browser" value="firefox" />-->
+<!--    <classes>-->
+<!--      <class name="tests.ElementsTraditionalTest"></class>-->
+<!--      <class name="tests.ProductDetailsTest"></class>-->
+<!--      <class name="tests.ShoppingExperienceTest"></class>-->
+<!--    </classes>-->
+<!--  </test>-->
+<!--  <test name="Tests V2 - Traditional firefox 768">-->
+<!--    <parameter name="url" value="http://demo.applitools.com/gridHackathonV2.html" />-->
+<!--    <parameter name="width" value="768" />-->
+<!--    <parameter name="height" value="700" />-->
+<!--    <parameter name="browser" value="firefox" />-->
+<!--    <classes>-->
+<!--      <class name="tests.ElementsTraditionalTest"></class>-->
+<!--      <class name="tests.ProductDetailsTest"></class>-->
+<!--      <class name="tests.ShoppingExperienceTest"></class>-->
+<!--    </classes>-->
+<!--  </test>-->
+<!--  <test name="Tests V2 - Traditional edge 1200">-->
+<!--    <parameter name="url" value="http://demo.applitools.com/gridHackathonV2.html" />-->
+<!--    <parameter name="width" value="1200" />-->
+<!--    <parameter name="height" value="700" />-->
+<!--    <parameter name="browser" value="edge" />-->
+<!--    <classes>-->
+<!--      <class name="tests.ElementsTraditionalTest"></class>-->
+<!--      <class name="tests.ProductDetailsTest"></class>-->
+<!--      <class name="tests.ShoppingExperienceTest"></class>-->
+<!--    </classes>-->
+<!--  </test>-->
+<!--  <test name="Tests V2 - Traditional edge 768">-->
+<!--    <parameter name="url" value="http://demo.applitools.com/gridHackathonV2.html" />-->
+<!--    <parameter name="width" value="768" />-->
+<!--    <parameter name="height" value="700" />-->
+<!--    <parameter name="browser" value="edge" />-->
+<!--    <classes>-->
+<!--      <class name="tests.ElementsTraditionalTest"></class>-->
+<!--      <class name="tests.ProductDetailsTest"></class>-->
+<!--      <class name="tests.ShoppingExperienceTest"></class>-->
+<!--    </classes>-->
+<!--  </test>-->
+</suite>
