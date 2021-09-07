@@ -39,13 +39,13 @@ public class BaseTest {
         return driver;
     }
 
-    @Parameters( {"url","width","height","browser"})
+    
     @BeforeMethod
-    public void setup(String url, int width, int height, String browser) {
-        BaseTest.width = width;
-        BaseTest.height = height;
-        BaseTest.browser = browser;
-        driver().navigateTo(url);
+    public void setup() {
+        BaseTest.width = "1400";
+        BaseTest.height = "1200";
+        BaseTest.browser = "chrome";
+        driver().navigateTo("http://demo.applitools.com/gridHackathonV1.html");
     }
 
     @AfterTest
