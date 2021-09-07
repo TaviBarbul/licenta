@@ -42,8 +42,8 @@ public class BaseTest {
     
     @BeforeMethod
     public void setup() {
-        BaseTest.width = "1400";
-        BaseTest.height = "1200";
+        BaseTest.width = 1400;
+        BaseTest.height = 1200;
         BaseTest.browser = "chrome";
         driver().navigateTo("http://demo.applitools.com/gridHackathonV1.html");
     }
